@@ -19,22 +19,28 @@
       Chemical Scores:
       <input type="number" id="ChemicalScores" />
     </form>
+
     <button name="add" type="button" onclick="insert_Row()" value="Insert row">
       Nhập
     </button>
-    <button name="dtb" type="button">Tính điểm trung bình</button>
-    <button name="hl" type="button">Xác định học lực</button>
+    <button name="dtb" type="button" onclick="avg()">
+      Tính điểm trung bình
+    </button>
+    <button name="hl" type="button" onclick="hocluc()">Xác định học lực</button>
 
-    <table id="table" border="1">
-      <tr>
-        <td>Họ và tên</td>
-        <td>Ngày tháng năm sinh</td>
-        <td>Điểm toán</td>
-        <td>Điểm lý</td>
-        <td>Điểm hoá</td>
-        <td>Điểm trung bình</td>
-        <td>Học lực</td>
-      </tr>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Họ và tên</th>
+          <th>Ngày tháng năm sinh</th>
+          <th>Điểm toán</th>
+          <th>Điểm lý</th>
+          <th>Điểm hoá</th>
+          <th>Điểm trung bình</th>
+          <th>Học lực</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
     </table>
     <br />
   </body>
