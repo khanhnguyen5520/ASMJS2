@@ -15,14 +15,12 @@ function insert_Row() {
     alert("Bạn đã nhập thiếu điểm lý");
   } else if (che.value == "") {
     alert("Bạn đã nhập thiếu điểm hoá");
-  } else if (isNaN(math) && isNaN(phy) && isNaN(che)) {
-    alert("Kí tự bạn nhập không phải là số");
   } else if (isNaN(math)) {
-    alert("Kí tự bạn nhập không phải là số");
+    alert("Vui lòng nhập lại điểm toán");
   } else if (isNaN(phy)) {
-    alert("Kí tự bạn nhập không phải là số");
+    alert("Vui lòng nhập lại điểm lý");
   } else if (isNaN(che)) {
-    alert("Kí tự bạn nhập không phải là số");
+    alert("Vui lòng nhập lại điểm hoá");
   } else {
     let tbody = document.getElementById("tbody");
     let row = document.createElement("tr");
